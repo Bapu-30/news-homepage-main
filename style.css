@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+    /* align-items: center; */
+    margin: 0 7rem;
+    justify-content: center;
+
+}
+
+.header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* margin: 0 2rem; */
+    padding: 1.5rem 0;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 400;
+
+}
+
+li {
+    color: hsl(236, 13%, 42%);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}
+
+p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+li a:hover {
+    color: hsl(5, 85%, 63%);
+    /* font-weight: 700; */
+    transition: 0.2s;
+}
+
+
+.pic {
+
+    overflow: hidden;
+    grid-column: 1 / 3;
+}
+
+.pic picture img {
+    width: 100%;
+}
+
+.sidebar {
+    background-color: hsl(240, 100%, 5%);
+    padding: 2rem 3rem;
+    grid-column: 3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sidebar h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.sidebar h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.sidebar p {
+    line-height: 2;
+}
+
+.sidebar article:not(article:last-child) {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+    padding-bottom: 1.6rem;
+}
+
+.sidebar article h3:hover {
+    color: hsl(35, 77%, 62%);
+    transition: 0.2s;
+}
+
+
+.box1 {
+    /* background-color: green; */
+    padding-right: 4rem;
+}
+
+.box1 h1 {
+    color: hsl(240, 100%, 5%);
+    font-size: 3.4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.box2 p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.box2 {
+    /* background-color: goldenrod; */
+
+    /* padding-left: 3rem; */
+}
+
+.box2 button {
+    padding: 1rem 3rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.box2 button:hover {
+    background-color: hsl(240, 100%, 5%);
+    transition: 0.2s;
+}
+
+
+
+.card {
+    margin-bottom: 5rem;
+    display: grid;
+    /* height: 150px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-top: 3rem;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+
+}
+
+.bottom .show {
+    width: 35%;
+    height: 100%;
+    /* overflow: hidden; */
+    object-fit: contain;
+
+
+}
+
+.bottom .show img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* overflow: hidden; */
+
+}
+
+.bottom .text {
+    line-height: 1.8;
+    /* overflow: hidden; */
+}
+
+.bottom .text h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+}
+
+.bottom .text h3 {
+    color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.bottom .text h3:hover {
+    color: hsl(5, 85%, 63%);
+    transition: 0.2s;
+}
